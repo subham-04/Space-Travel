@@ -1,0 +1,15 @@
+'use strict';
+const nav = document.querySelector(".primary-navigation");
+const navToggle = document.querySelector(".mobile-nav-toggle");
+
+//when someone clicks the hamburger button
+navToggle.addEventListener("click",()=>{
+    const visibility= nav.getAttribute('data-visible');
+    if(visibility==='false'){
+        nav.setAttribute('data-visible',true);
+    }else{
+        nav.setAttribute('data-visible',false);
+    }
+})
+    //if the nav is colsed, open it
+    //if the nav is open, close it
