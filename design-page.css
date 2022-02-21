@@ -41,6 +41,7 @@ body {
       grid-template-rows: min-content 1fr;
   background-size: cover;
   background-position: bottom center;
+  overflow-x: hidden;
 }
 
 .test {
@@ -129,6 +130,12 @@ body {
             flex-direction: column;
     inset: 0 0 0 25%;
     z-index: 100;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
   .primary-navigation a {
     text-decoration: none;
@@ -136,6 +143,10 @@ body {
   .primary-navigation a span {
     margin-right: 0.5rem;
     font-weight: 700;
+  }
+  .primary-navigation[data-visible="true"] {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   .underline-indicators .active {
     border: 0;
@@ -147,6 +158,12 @@ body {
     right: 1rem;
     top: 2rem;
     background: transparent;
+    background-image: url(/assets/shared/icon-hamburger.svg);
+    width: 1.5rem;
+    aspect-ratio: 1;
+    border: 0;
+    cursor: pointer;
+    background-repeat: no-repeat;
   }
 }
 
@@ -209,7 +226,7 @@ body {
 
 @media (min-width: 65em) {
   .grid-container {
-    -ms-grid-columns: minmax(2rem, 1fr) (minmax(0, 40rem) minmax(2rem, 1fr))[2];
+    -ms-grid-columns: minmax(2rem, 1fr) (minmax(0, 40rem) minmax(2rem, 1fr));
         grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 40rem) minmax(2rem, 1fr));
     -webkit-column-gap: var(--container-gap, 3rem);
             column-gap: var(--container-gap, 3rem);
