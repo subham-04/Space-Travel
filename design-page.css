@@ -164,6 +164,14 @@ body {
     border: 0;
     cursor: pointer;
     background-repeat: no-repeat;
+    background-position: center;
+  }
+  .mobile-nav-toggle:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 5px;
+  }
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url(/assets/shared/icon-close.svg);
   }
 }
 
@@ -173,7 +181,6 @@ body {
 
 .primary-navigation {
   --underline-gap:1.5rem;
-  position: fixed;
   --gap:1.5rem;
   list-style: none;
   padding: 0 1.5rem;
@@ -263,6 +270,16 @@ body {
   .grid-container-home {
     padding-bottom: 15vh;
   }
+}
+
+.logo {
+  margin: 1.5rem clamp(1.5rem, calc(4vw+1rem), 3rem);
+}
+
+.primary-heading {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (prefers-reduced-motion: reduce) {
