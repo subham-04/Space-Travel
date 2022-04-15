@@ -158,7 +158,7 @@ body {
     right: 1rem;
     top: 2rem;
     background: transparent;
-    background-image: url(/assets/shared/icon-hamburger.svg);
+    background-image: url(icon-hamburger.svg);
     width: 1.5rem;
     aspect-ratio: 1;
     border: 0;
@@ -530,6 +530,6 @@ picture {
 }
 
 .home {
-  background-image: url(/assets/home/background-home-mobile.jpg);
+  background-image: url(background-home-mobile.jpg);
 }
 /*# sourceMappingURL=design-page.css.map */
