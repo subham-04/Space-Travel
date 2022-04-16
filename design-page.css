@@ -262,7 +262,7 @@ body {
 
 @media (min-width: 65em) {
   .home {
-    background-image: url(/assets/home/background-home-desktop.jpg) !important;
+    background-image: url(background-home-desktop.jpg) !important;
   }
 }
 
