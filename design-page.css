@@ -256,7 +256,7 @@ body {
 @media (min-width: 45em) {
   .home {
     background-position: center center;
-    background-image: url(/assets/home/background-home-tablet.jpg) !important;
+    background-image: url(background-home-tablet.jpg) !important;
   }
 }
 
