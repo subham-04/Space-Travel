@@ -262,7 +262,7 @@ body {
 
 @media (min-width: 65em) {
   .home {
-    background-image: url(/assets/home/background-home-desktop.jpg) !important;
+    background-image: url(background-home-desktop.jpg) !important;
   }
   .primary-navigation {
     margin: 1.5rem 2rem;
@@ -533,6 +533,6 @@ picture {
 }
 
 .home {
-  background-image: url(/assets/home/background-home-mobile.jpg);
+  background-image: url(background-home-mobile.jpg);
 }
 /*# sourceMappingURL=design-page.css.map */
