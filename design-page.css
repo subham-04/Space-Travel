@@ -158,7 +158,7 @@ body {
     right: 1rem;
     top: 2rem;
     background: transparent;
-    background-image: url(icon-hamburger.svg);
+    background-image: url(/assets/shared/icon-hamburger.svg);
     width: 1.5rem;
     aspect-ratio: 1;
     border: 0;
@@ -171,7 +171,7 @@ body {
     outline-offset: 5px;
   }
   .mobile-nav-toggle[aria-expanded="true"] {
-    background-image: url(icon-close.svg);
+    background-image: url(/assets/shared/icon-close.svg);
   }
 }
 
@@ -183,7 +183,7 @@ body {
   --underline-gap:1.5rem;
   --gap: clamp(1.5rem, calc(5vw+1.5rem) , 3rem);
   list-style: none;
-  padding: 0 1.5rem;
+  padding: 0 3.3rem;
   margin: 0;
   background: rgba(11, 13, 23, 0.98);
 }
@@ -256,16 +256,33 @@ body {
 @media (min-width: 45em) {
   .home {
     background-position: center center;
-    background-image: url(background-home-tablet.jpg) !important;
+    background-image: url(/assets/home/background-home-tablet.jpg) !important;
   }
 }
 
 @media (min-width: 65em) {
   .home {
-    background-image: url(background-home-desktop.jpg) !important;
+    background-image: url(/assets/home/background-home-desktop.jpg) !important;
   }
   .primary-navigation {
-    margin: 1.5rem 2rem;
+    margin: 1.5rem 5rem;
+  }
+  .primary-heading::after {
+    content: '';
+    display: block;
+    position: relative;
+    margin-right: -6.3rem;
+    height: 0.5px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1px;
+            order: 1px;
+  }
+  nav {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 
@@ -533,6 +550,6 @@ picture {
 }
 
 .home {
-  background-image: url(background-home-mobile.jpg);
+  background-image: url(/assets/home/background-home-mobile.jpg);
 }
 /*# sourceMappingURL=design-page.css.map */
