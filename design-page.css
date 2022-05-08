@@ -116,6 +116,12 @@ body {
   }
 }
 
+	@media (max-width: 65em) {	
+  .primary-navigation a > span {	
+    display: none;	
+  }	
+}
+
 @media (max-width: 45em) {
   .primary-navigation {
     padding: calc(min(10rem,15vh)) 2rem !important;
